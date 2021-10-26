@@ -6,6 +6,7 @@ import LerntUseCollback from './useCallback/LerntUseCollback';
 import { reduser, initialState } from './useReduser/reduser';
 import Main from './todoList/Main';
 
+// Learnt hooks
 function App() {
 	const [state, dispatch] = React.useReducer(reduser, initialState);
 	return (

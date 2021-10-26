@@ -1,7 +1,7 @@
 import React from 'react';
 import Buttons from './Buttons';
 
-export default function LerntUseCollback() {
+export default React.memo(function LerntUseCollback() {
 	const [count, setCount] = React.useState(0);
 	const [number, setNumber] = React.useState(1);
 
@@ -10,6 +10,7 @@ export default function LerntUseCollback() {
 
 	return (
 		<div>
+			<h1>Use Collback</h1>
 			<input
 				type='number'
 				placeholder='name'
@@ -24,4 +25,4 @@ export default function LerntUseCollback() {
 			<Buttons onPlus={onPlus} onMinus={onMinus} />
 		</div>
 	);
-}
+});

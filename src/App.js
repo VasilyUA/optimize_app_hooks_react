@@ -6,7 +6,7 @@ import LerntUseCollback from './useCallback/LerntUseCollback';
 import { reduser, initialState } from './useReduser/reduser';
 import Main from './todoList/Main';
 
-function App() {
+export default function App() {
 	const [state, dispatch] = React.useReducer(reduser, initialState);
 	return (
 		<Context.Provider value={{ dispatch }}>
@@ -26,5 +26,3 @@ function App() {
 		</Context.Provider>
 	);
 }
-
-export default App;
